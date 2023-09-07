@@ -20,7 +20,7 @@ func initDatabase() (db *database.DB) {
 	db = &database.DB{
 		Host: os.Getenv("MYSQL_HOST"),
 		User: os.Getenv("MYSQL_USER"),
-		Name: os.Getenv("MYSQL_DATABASE"),
+		Name: os.Getenv("MYSQL_API_DATABASE"),
 		Pass: os.Getenv("MYSQL_PASSWORD"),
 		Port: os.Getenv("MYSQL_PORT"),
 	}
